@@ -1,6 +1,4 @@
 fastapi
-pydantic
 Jinja2
-orjson
 asyncio
 httpx
