@@ -3,10 +3,8 @@ from fastapi.responses import HTMLResponse, RedirectResponse
 from fastapi.templating import Jinja2Templates
 import httpx
 import asyncio
-from pydantic import BaseModel, EmailStr
 import os
 import logging
-import orjson
 from typing import Optional
 
 # Configure logging
