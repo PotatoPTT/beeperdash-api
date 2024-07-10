@@ -168,7 +168,7 @@ async def getBridgeStatus(bridgeName, data):
             has_error = remoteState.get('has_error', True)
             is_ok = remoteState.get('ok', False)
             if is_self_hosted:
-                return {"running": is_running, "connected": is_connected, "has error": has_error, "is ok": is_ok}
+                return {"running": is_running, "connected": is_connected, "has_error": has_error, "is_ok": is_ok}
         else:
             continue
     return {"error": "not found"}
