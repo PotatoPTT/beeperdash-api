@@ -19,7 +19,7 @@ templates = Jinja2Templates(directory="app/templates")
 async def startup_event():
     app.state.httpx_client = httpx.AsyncClient()
     try:
-        access_token = os.getenv("TOKEN")
+        access_token = os.getenv("MATRIX_ACCESS_TOKEN")
         if not access_token:
             raise ValueError("TOKEN not set")
     except Exception as e:
